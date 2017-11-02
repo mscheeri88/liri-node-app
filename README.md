@@ -7,6 +7,6 @@
 3. tweets works
 4. spotify works
 5. movie this works, but not to add the movie if I put in nothing
-6. do what it says pulls from the text file random, but does not execute.  
+6. do what it says pulls from the text file and runs the function, it works. 
 
 Thanks guys!!!!

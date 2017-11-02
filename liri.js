@@ -63,7 +63,8 @@ function liri(command, arg2) {
 			});
 			break;
 			//------------------------------------------------//
-		case "do-what-it-says":
+		
+			case "do-what-it-says":
 			// This block of code will read from the "random.txt" file.
 			// It's important to include the "utf8" parameter or the code will provide stream data (garbage)
 			// The code will store the contents of the reading inside the variable "data"
@@ -74,11 +75,14 @@ function liri(command, arg2) {
 				}
 				console.log("$ node liri.js " + data);
         
-        		liri();
+        		
 				// Then split it by commas (to make it more readable)
-				//var dataArr = data.split(",");
+				var dataArr = data.toString().split(",");
+				console.log("data aray", dataArr);
 				// We will then re-display the content as an array for later use.
 				//console.log(dataArr);
+				//mytweet(dataArr)
+				liri(dataArr[0], dataArr[1]);
 			});
 	}
 }
